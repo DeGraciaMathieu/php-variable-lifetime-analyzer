@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use PhpParser\Parser;
+use PhpParser\ParserFactory;
 use Illuminate\Support\ServiceProvider;
+use DeGraciaMathieu\RapidBind\Facades\RapidBind;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        RapidBind::bind([
+            'app/Domain/Ports',
+        ]);
+
+        $this->app->bind(Parser::class, function () {
+            return (new ParserFactory())->createForHostVersion();
+        });
     }
 }
