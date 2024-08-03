@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/arts/logo.png" width="600">
+<img src="https://github.com/DeGraciaMathieu/php-smelly-code-detector/blob/master/arts/robot.png" width="250">
 </p>
 
 # php-variable-lifetime-analyzer
@@ -7,6 +7,10 @@
 The lifetime of a variable represents the time a variable exists in a script. It is calculated from the first line to the last line using a given variable.
 
 Favoring variables with a short lifetime can improve code readability and help prevent potential errors. A variable with a long lifetime will likely span from one end of your script to the other, making it difficult to understand. This tool helps monitor the lifetime of your variables and ensures they are placed as close to their usage as possible.
+
+<p align="center">
+<img src="/arts/logo.png" width="600">
+</p>
 
 ## Phar
 This tool is distributed as a [PHP Archive (PHAR)](https://www.php.net/phar):
@@ -43,7 +47,7 @@ php variable-lifetime-analyzer analyze app
  └───────────────────────────┴──────────────────────────────────────┴───────────────────────┘
 ```
 
-Understanding analysis :
+## Understanding analysis :
 
 - **Average variable lifetime** : This represents the average lifetime of variables across the entire project. It includes all variables from all methods and can be influenced by variables with very long lifetimes.
 
