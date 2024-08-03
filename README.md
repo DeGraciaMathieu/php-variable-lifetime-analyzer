@@ -59,7 +59,7 @@ php variable-lifetime-analyzer analyze app
 
 | Options               | Description |
 |-----------------------|-------------|
-| --json=               | Output the analysis results in JSON format |
+| --json               | Output the analysis results in JSON format |
 
 > [!TIP]  
 > Other analysis [tools](https://github.com/DeGraciaMathieu) are available.
