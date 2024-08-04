@@ -16,7 +16,7 @@ Favoring variables with a short lifetime can improve code readability and help p
 This tool is distributed as a [PHP Archive (PHAR)](https://www.php.net/phar):
 
 ```
-wget https://github.com/DeGraciaMathieu/php-variable-lifetime-analyzer/raw/master/builds/php-variable-lifetime-analyzer
+wget https://github.com/DeGraciaMathieu/php-variable-lifetime-analyzer/raw/main/builds/variable-lifetime-analyzer
 ```
 
 ```
